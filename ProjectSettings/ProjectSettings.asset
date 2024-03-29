@@ -165,7 +165,7 @@ PlayerSettings:
   androidMinAspectRatio: 1
   applicationIdentifier:
     Android: com.immersal.sdk.samples
-    iPhone: com.immersal.sdk.samples
+    iPhone: com.immersal.sdk.samplesuuu
   buildNumber:
     Bratwurst: 0
     Standalone: 0
@@ -585,7 +585,7 @@ PlayerSettings:
   enableCrashReportAPI: 0
   cameraUsageDescription: Required for augmented reality support.
   locationUsageDescription: Required for satellite positioning support.
-  microphoneUsageDescription: 
+  microphoneUsageDescription: 777
   bluetoothUsageDescription: 
   macOSTargetOSVersion: 10.13.0
   switchNMETAOverride: 
