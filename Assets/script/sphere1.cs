@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class datetime : MonoBehaviour
 {
+
     public Animator animator; // Animator component reference
+    public int startHour; // Start hour
+    public int startMinute; // Start minute
+    public int endHour; // End hour
+    public int endMinute; // End minute
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +24,12 @@ public class datetime : MonoBehaviour
         // Get current time
         System.DateTime currentTime = System.DateTime.Now;
 
-        // Check if current time is between 11:45 PM and 11:50 PM
-        if (currentTime.Hour == 23 && currentTime.Minute >= 45 && currentTime.Minute <= 50)
+        // Get the values from the input fields
+        
+
+        // Check if current time is between the start and end times
+        if ((currentTime.Hour > startHour || (currentTime.Hour == startHour && currentTime.Minute >= startMinute)) &&
+            (currentTime.Hour < endHour || (currentTime.Hour == endHour && currentTime.Minute <= endMinute)))
         {
             // Enable the Animator component
             animator.enabled = true;
