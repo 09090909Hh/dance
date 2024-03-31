@@ -29,7 +29,7 @@ public class datetime : MonoBehaviour
 
         // Check if current time is between the start and end times
         if ((currentTime.Hour > startHour || (currentTime.Hour == startHour && currentTime.Minute >= startMinute)) &&
-            (currentTime.Hour < endHour || (currentTime.Hour == endHour && currentTime.Minute <= endMinute)))
+            (currentTime.Hour < endHour || (currentTime.Hour == endHour && currentTime.Minute < endMinute)))
         {
             // Enable the Animator component
             animator.enabled = true;
